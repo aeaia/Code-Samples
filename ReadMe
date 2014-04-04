@@ -1,0 +1,56 @@
+Ali Seybold
+COMS 1004
+
+This hwk4 directory contains seven files, six of which I am submitting for grading (Card.java, Deck.java, 
+Hand.java, Player.java, Game.java, and ReadMe).  Together they allow a computer user to simulate a game of 
+poker. The other file (PokerTest.java) is for the grader's use only.
+
+Comments:
+  -- This project rather than the last one helped me understand object oriented programming.  I think I have 
+     improved my program organization, but do still need work.
+  -- Aces were a tricky problem that I dodged with if statements, but in a more perfect world, I would have
+     preferred to create an ace that could be both higher and lower than other cards.
+     
+     
+File Descriptions:
+
+ReadMe:  This file.
+
+Card.java:  Creates Card objects with suit and rank to imitate playing cards.  
+Notes from the class description:
+  -- This class creates objects with variables for suit and rank to imitate playing cards.  
+  -- It is to be used by the Deck, Hand, and Game classes.
+  -- Its methods include compareTo (compares cards to each other) and toString (names cards with words).
+
+
+Deck.java:  Makes a deck of Card objects.  
+Notes from the class description:
+  -- This class makes a deck of Card objects.
+  -- I have included the methods shuffle, swap, and draw to control the deck.
+  -- I have also included a method for the grader (or a later user) to print the cards in the deck and make
+     sure they have the desired attributes.  This method (deckCheck) is not used by the project.  
+
+Hand.java:  Creates an object with an array of cards.
+Notes from the class description:
+  -- The Hand class creates an object with an array of cards and three instance variables for ease of hand
+     evaluation.
+  -- It also includes methods for changing which Card objects are in the Hand.
+  -- There are methods to sort the hand by rank of the cards (and methods that allow this to happen), fill the 
+     array in the hand with cards, and determine how the hand would be scored.  
+  -- Note: the sort method that has been block commented out of use was less neat than the used method, so I
+     blocked it out but left it in case it could be useful later.  I don't want it to be graded.
+
+Player.java:  Creates the object that implements and controls the hand and the deck 
+Notes from the class description:
+  -- This class creates the Player object that controls the hand and the deck.  
+  -- Methods include dealing the cards and redrawing.  It does what a person would do.
+
+
+Game.java:  Runs the poker simulation.
+Notes from the class description:
+  -- The game class runs the poker simulation.  It creates a player and directs the program user to play.  
+
+PokerTest.java:  Utility for grader.
+Notes from the class description:
+  -- This class is for the grader.  Sorry if it's messed up or just not helpful.  Instructions on how to use 
+     it are in the text.
